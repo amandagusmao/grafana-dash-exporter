@@ -1,0 +1,64 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "id": 2,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PBFA97CFB590B2093"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0.1,
+            "gradientMode": "none",
+            "lineInterpolation": "linear",
+            "lineWidth": 1
+          },
+          "unit": "short"
+        }
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          },
+          "expr": "cpu_usage_active",
+          "refId": "A"
+        }
+      ],
+      "title": "CPU Usage",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 27,
+  "tags": [
+    "ai-generated"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Test CPU Dashboard",
+  "uid": "bb2321c3-7663-4896-b384-406ceb86ce6f",
+  "version": 1
+}
